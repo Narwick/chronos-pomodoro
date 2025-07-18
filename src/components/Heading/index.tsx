@@ -1,4 +1,4 @@
-import styles from './Heading.module.css';
+import styles from './styles.module.css';
 
 type HeadingProps = {
     children?: React.ReactNode;
@@ -6,8 +6,8 @@ type HeadingProps = {
 
 export function Heading({ children }: Readonly<HeadingProps>) {
     return (
-        <header >
+        <h1 className={styles.heading}>
             {children}
-        </header>
+        </h1>
     );
 }
